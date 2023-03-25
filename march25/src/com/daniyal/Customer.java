@@ -5,11 +5,6 @@ public class Customer {
     private String cName;
     private String eMail;
 
-    public Customer() {
-        // TODO Auto-generated constructor stub
-    }
-
-
     public void setCid(int cid) {
         this.cid = cid;
     }
@@ -27,7 +22,7 @@ public class Customer {
 
         // TODO Auto-generated method stub
 
-        return "Cust Id: " + cid + " cName: " + cName + " eMAIL.." + eMail;
+        return "Customer Id: " + cid + " Customer Name: " + cName + "\nemail ID:" + eMail;
 
     }
 }

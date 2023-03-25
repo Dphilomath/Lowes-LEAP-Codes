@@ -4,13 +4,6 @@ public class Branch {
     protected int brId;
     protected String loc;
 
-    public Branch(){
-        // TODO Auto-generated constructor stub
-    }
-
-    public Branch(String loc){
-        this.loc = loc;
-    }
     public void setBrId(int brId) {
         this.brId = brId;
     }

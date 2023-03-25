@@ -8,14 +8,14 @@
         <property name="brId" value="789"></property>
     </bean>
     <bean id="bBean2" class="com.daniyal.Branch">
-        <property name="loc" value="Bangalore"></property>
+        <property name="loc" value="Silchar"></property>
         <property name="brId" value="245"></property>
 
     </bean>
     <bean id="cBean1" class="com.daniyal.Customer">
         <property name="cid" value="123"></property>
-        <property name="cName" value="Naveen"></property>
-        <property name="eMail" value="nv@aztec.com"></property>
+        <property name="cName" value="Daniyal Mahmood"></property>
+        <property name="eMail" value="daniyalmahmood123@gmail.com"></property>
     </bean>
     <bean id="bnkBean" class="com.daniyal.Bank">
         <property name="bid" value="123"></property>
