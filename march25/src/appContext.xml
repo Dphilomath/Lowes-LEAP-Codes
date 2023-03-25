@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bBean1" class="com.daniyal.Branch">
+        <property name="loc" value="Mumbai"></property>
+        <property name="brId" value="789"></property>
+    </bean>
+    <bean id="bBean2" class="com.daniyal.Branch">
+        <property name="loc" value="Bangalore"></property>
+        <property name="brId" value="245"></property>
+
+    </bean>
+    <bean id="cBean1" class="com.daniyal.Customer">
+        <property name="cid" value="123"></property>
+        <property name="cName" value="Naveen"></property>
+        <property name="eMail" value="nv@aztec.com"></property>
+    </bean>
+    <bean id="bnkBean" class="com.daniyal.Bank">
+        <property name="bid" value="123"></property>
+        <property name="bName" value="HDFC Ltd"></property>
+        <property name="details">
+            <map>
+                <entry key-ref="bBean1" value-ref="cBean1"></entry>
+                <entry key-ref="bBean2" value-ref="cBean1"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
